@@ -152,4 +152,14 @@ export default class Vector2D {
 
 		return this;
 	}
+
+	copy (vec) {
+		this.x = vec.x;
+		this.y = vec.y;
+		return this;
+	}
+
+	clone () {
+		return new Vector2D(this.x, this.y);
+	}
 }
