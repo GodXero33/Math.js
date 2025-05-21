@@ -247,6 +247,10 @@ export default class Vector2D {
 		return new Vector2D(this.x, this.y);
 	}
 
+	toString () {
+		return `Vector2D<${this.x}, ${this.y}>`;
+	}
+
 	static create (x = 0, y = 0) {
 		return new Vector2D(x, y);
 	}
